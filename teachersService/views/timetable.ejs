@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+	<style>
+		body {
+			background-color: rgb(243, 243, 226);
+		}
+
+		h1 {
+			text-align: center;
+			font-family: 'Itim', cursive;
+		}
+	</style>
+	<title>Document</title>
+</head>
+
+<body>
+	<%- include("partials/navbarpage.ejs") %>
+	
+	<div class="table-div">
+		<h1>TIME TABLE </h1>
+		<table border="5" cellspacing="0" align="center">
+			<tr>
+				<td align="center" height="50" width="100"><br>
+					<b>Day/Period</b></br>
+				</td>
+				<td align="center" height="50" width="100">
+					<b>I<br>8:50-9:40</b>
+				</td>
+				<td align="center" height="50" width="100">
+					<b>II<br>09:40-10:30</b>
+				</td>
+				<td align="center" height="50" width="100">
+					<b>III<br>10:30-11:20</b>
+				</td>
+				<td align="center" height="50" width="100">
+					<b>IV <br>11:20-12:10</b>
+				</td>
+				<td align="center" height="50" width="100">
+
+				</td>
+				<td align="center" height="50" width="100">
+					<b>V<br>02:00-02:50</b>
+				</td>
+				<td align="center" height="50" width="100">
+					<b>VI<br>02:50-03:40</b>
+				</td>
+				<td align="center" height="50" width="100">
+					<b>VII<br>3:40-4:30</b>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" height="50">
+					<b>Monday</b>
+				</td>
+				<td align="center" height="50">EC & ERP</td>
+				<td align="center" height="50">IOT</td>
+				<td align="center" height="50">CNS</td>
+				<td align="center" height="50">SC</td>
+				<td rowspan="6" align="center" height="50">
+					<h2>L<br>U<br>N<br>C<br>H</h2>
+				</td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+			</tr>
+			<tr>
+				<td align="center" height="50">
+					<b>Tuesday</b>
+				</td>
+				<td align="center" height="50">SPM</td>
+				<td align="center" height="50">SC</td>
+				<td align="center" height="50">EC & ERP</td>
+				<td align="center" height="50">IOT</td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+			</tr>
+			<tr>
+				<td align="center" height="50">
+					<b>Wednesday</b>
+				</td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50">CNS</td>
+				<td align="center" height="50">SPM</td>
+				<td align="center" height="50">IOT</td>
+
+			</tr>
+			<tr>
+				<td align="center" height="50">
+					<b>Thursday</b>
+				</td>
+				<td align="center" height="50">EC & ERP</td>
+				<td align="center" height="50">SPM</td>
+				<td align="center" height="50">CNS</td>
+				<td align="center" height="50">SC</td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+			</tr>
+			<tr>
+				<td align="center" height="50">
+					<b>Friday</b>
+				</td>
+				<td align="center" height="50"></td>
+				<td colspan="3" align="center" height="50">COMPREHENSIVE VIVA
+				</td>
+				<td colspan="3" align="center" height="50">SEMINAR
+				</td>
+			</tr>
+			<tr>
+				<td align="center" height="50">
+					<b>Saturday</b>
+				</td>
+				<td align="center" height="50">Eng</td>
+				<td colspan="3" align="center" height="50">MINOR PROJECT
+				</td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+				<td align="center" height="50"></td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>

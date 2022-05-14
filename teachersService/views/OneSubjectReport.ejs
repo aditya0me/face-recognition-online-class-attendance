@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>One Subject Report</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+</head>
+<body>
+    
+    <%- include("partials/navbarpage.ejs")  %>
+    <h3>Total Class Count - <%= extractedInfo.noOflessons %></h3>
+    <h3> Times Assigned As Present - <%= extractedInfo.totaTimesPresent %> </h3>
+
+        <div class="row">
+            <h1 class="text-center">Information</h1>
+            <div class="col-6 offset-3">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">On</th>
+                        <th scope="col">Total Images Taken</th>
+                        <th scope="col">Found</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <% for(let i=0;i<extractedInfo.individualLessons.length;i++){ %> 
+                            <tr>
+                                <th scope="row"><%= i+1 %></th>
+                                <td><%= extractedInfo.individualLessons[i].ondate %></td>
+                                <td>16</td>
+                                <td><%= extractedInfo.individualLessons[i].noOfImgContainUser %></td>
+                            </tr>
+                        <% } %>
+                    </tbody>
+                  </table>
+            
+
+            </div>
+
+        </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
